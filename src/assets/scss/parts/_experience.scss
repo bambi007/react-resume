@@ -1,0 +1,67 @@
+.experience {
+  // border-bottom: 1px solid;
+  // border-image-slice: 1;
+  // border-image-source: linear-gradient(to left, $primary-accent, $secondary-accent);
+
+  .container {
+    display: block;
+
+  }
+
+  .position {
+    margin-top: 10px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid $border-color;
+
+    @media (min-width: 900px) {
+      display: flex;
+      justify-content: space-between;
+    }
+
+    .left {
+      margin-right: 20px;
+
+      @media (min-width: 900px) {
+        width: 200px;
+        text-align: right;
+      }
+    }
+  }
+
+  .dates {
+    display: block;
+    font-weight: bold;
+    color: $secondary-color;
+  }
+
+  h4 {
+    display: inline-block;
+    margin-right: 5px;
+    text-transform: uppercase;
+
+    @media (min-width: 900px) {
+      margin-right: 0;
+    }
+  }
+
+  .company {
+    display: inline-block;
+    font-weight: bold;
+    font-size: 14px;
+
+    @media (min-width: 900px) {
+      display: block;
+    }
+  }
+
+  p {
+    color: $secondary-color;
+    margin-top: 10px;
+
+    @media (min-width: 900px) {
+      width: 80%;
+      // margin-left: 10px;
+    }
+
+  }
+}

@@ -3,6 +3,7 @@
 
 @import './parts/header';
 @import './parts/skills';
+@import './parts/experience';
 
 * {
   box-sizing: border-box;
@@ -37,9 +38,13 @@ body {
 }
 
 .container {
-  padding: 30px;
+  padding: 10px;
   display: flex;
   justify-content: space-between;
+
+  @media (min-width: 550px) {
+    padding: 20px;
+  }
 }
 
 .bar {

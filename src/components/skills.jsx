@@ -22,7 +22,7 @@ export class Skills extends Component {
     return (
       <section className="skills">
         <div className="container">
-          <h2>Skills</h2>
+          <h3>My Skills</h3>
           <div className="skill-list">
             <Skill name='HTML' width={this.state.ninety} />
             <Skill name='CSS' width={this.state.ninety} />

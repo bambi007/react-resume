@@ -15,10 +15,6 @@
         width: 100%;
         margin-top: 10px;
 
-
-
-
-
         @media (min-width: 550px) {
           width: 45%;
         }
@@ -45,21 +41,21 @@
       // margin-top: 10px;
       background: $secondary-accent;
       justify-content: flex-start;
-      border-radius: 100px;
+      border-radius: 20px;
       align-items: center;
       position: relative;
       padding: 0 2px;
       display: flex;
-      height: 18px;
+      height: 16px;
       width: 100%;
     }
 
     .progress-value {
       animation: load 2s normal forwards;
-      border-radius: 100px;
+      border-radius: 20px;
       background: $brightest-color;
-      height: 14px;
-      width: 14px;
+      height: 12px;
+      width: 12px;
     }
 
     @keyframes load {
