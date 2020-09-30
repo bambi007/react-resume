@@ -1,0 +1,112 @@
+header {
+  border-bottom: 1px solid;
+  border-image-slice: 1;
+  border-image-source: linear-gradient(to left, $primary-accent, $secondary-accent);
+
+  .profile {
+    width: 100%;
+    display: block;
+
+    @media (min-width: 900px) {
+      width: 80%;
+    }
+
+    span {
+      text-transform: uppercase;
+      font-weight: 800;
+    }
+  }
+
+  .image {
+    display: none;
+    background: $brightest-color;
+    width: 150px;
+    height: 150px;
+    position: relative;
+    overflow: hidden;
+    border-radius: 50%;
+    box-shadow: $small-shadow;
+
+    @media (min-width: 900px) {
+      display: block;
+    }
+
+    img {
+      width: 100%;
+    }
+  }
+}
+
+.contact-links {
+  display: block;
+  align-items: flex-start;
+  margin-top: 30px;
+
+  @media (min-width: 550px) {
+    display: flex;
+  }
+
+
+  .contact {
+
+    @media (min-width: 550px) {
+      margin-left: 10px;
+    }
+
+
+    a {
+      display: inline-block;
+      margin-right: 30px;
+      font-weight: 400;
+      margin-top: 10px;
+
+      span {
+        display: block;
+        text-transform: uppercase;
+        font-weight: 600;
+        color: $primary-accent;
+      }
+
+      &:hover {
+        color: $secondary-accent;
+      }
+    }
+  }
+
+  .social-media {
+
+    .social {
+      display: inline-block;
+      background: $brightest-color;
+      box-shadow: $small-shadow;
+      height: 40px;
+      width: 40px;
+      margin-right: 10px;
+      border-radius: 50%;
+      opacity: 0.6;
+
+      &.github {
+        background: url(../images/github.png);
+        background-size: cover;
+      }
+
+      &.linkedin {
+        background: url(../images/linkedin.png);
+        background-size: cover;
+      }
+
+      &.behance {
+        background: url(../images/behance.png);
+        background-size: cover;
+
+      }
+
+      &:hover {
+        transform: translateY(-5px);
+        background-color: $secondary-accent;
+        opacity: 0.8;
+
+      }
+    }
+  }
+}

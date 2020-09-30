@@ -1,0 +1,52 @@
+@import './variables';
+@import './typography';
+
+@import './parts/header';
+@import './parts/skills';
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  list-style: none;
+}
+
+body {
+  background-color: $primary-accent;
+  min-height: 100vh;
+  // font-size: calc(10px + 2vmin);
+  font-family: Helvetica, sans-serif;
+  // font-size: calc(14px + (26 - 14) * ((100vw - 300px) / (1600 - 300)));
+  color: $primary-color;
+}
+
+.paper {
+  background: $brightest-color;
+  width: 100vw;
+  height: 100vh;
+  margin: 0 auto;
+
+  @media (min-width: 900px) {
+    width: 900px;
+    height: 1272px;
+    box-shadow: $big-shadow;
+    margin-top: 50px;
+    margin-bottom: 80px;
+  }
+}
+
+.container {
+  padding: 30px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.bar {
+  background: $darkest-color;
+  min-width: 100%;
+  text-align: center;
+  color: $primary-accent;
+  padding: 10px 0;
+  font-size: 14px;
+}

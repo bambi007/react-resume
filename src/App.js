@@ -1,15 +1,13 @@
 import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import './assets/css/style.css'
+
+import { Paper, Bar } from "./components/paper"
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <p>
-          This is going to be my resume written in React
-        </p>
-      </header>
+      <Paper />
+      <Bar />
     </div>
   );
 }
