@@ -1,0 +1,18 @@
+.general-skills {
+  border-bottom: 1px solid;
+  border-image-slice: 1;
+  border-image-source: linear-gradient(to left, $primary-accent, $secondary-accent);
+  padding-bottom: 20px;
+
+  span {
+    display: inline-block;
+    background: $primary-accent;
+    color: $brightest-color;
+    margin-right: 5px;
+    margin-top: 5px;
+    padding: 10px 10px;
+    border-radius: 5px;
+    font-weight: 600;
+    font-size: 14px;
+  }
+}

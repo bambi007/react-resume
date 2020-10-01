@@ -153,13 +153,13 @@ header .image img {
   border-bottom: 1px solid;
   border-image-slice: 1;
   border-image-source: linear-gradient(to left, teal, goldenrod);
+  padding-bottom: 30px;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
 }
 
-.skills .container {
-  display: block;
-}
-
-.skills .container .skill-list {
+.skills .skill-list {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -170,18 +170,24 @@ header .image img {
           justify-content: space-between;
 }
 
-.skills .container .skill-list .skill {
+.skills .skill-list .skill {
   width: 100%;
   margin-top: 10px;
 }
 
 @media (min-width: 550px) {
-  .skills .container .skill-list .skill {
+  .skills .skill-list .skill {
     width: 45%;
   }
 }
 
-.skills .container .data {
+@media (min-width: 900px) {
+  .skills .skill-list .skill {
+    width: 100%;
+  }
+}
+
+.skills .data {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -190,17 +196,17 @@ header .image img {
           justify-content: space-between;
 }
 
-.skills .container .data span {
+.skills .data span {
   text-transform: uppercase;
   font-weight: 600;
   font-size: 14px;
 }
 
-.skills .container .data span.percent {
+.skills .data span.percent {
   color: goldenrod;
 }
 
-.skills .container .progress-bar {
+.skills .progress-bar {
   background: goldenrod;
   -webkit-box-pack: start;
       -ms-flex-pack: start;
@@ -218,7 +224,7 @@ header .image img {
   width: 100%;
 }
 
-.skills .container .progress-value {
+.skills .progress-value {
   -webkit-animation: load 2s normal forwards;
           animation: load 2s normal forwards;
   border-radius: 20px;
@@ -243,8 +249,19 @@ header .image img {
   }
 }
 
-.experience .container {
-  display: block;
+.experience {
+  border-bottom: 1px solid;
+  border-image-slice: 1;
+  border-image-source: linear-gradient(to left, teal, goldenrod);
+  padding-bottom: 20px;
+  height: 100%;
+}
+
+@media (min-width: 900px) {
+  .experience {
+    width: 70%;
+    padding-right: 30px;
+  }
 }
 
 .experience .position {
@@ -253,26 +270,12 @@ header .image img {
   border-bottom: 1px solid #dadada;
 }
 
-@media (min-width: 900px) {
-  .experience .position {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
-  }
+.experience .position:last-child {
+  border: none;
 }
 
 .experience .position .left {
   margin-right: 20px;
-}
-
-@media (min-width: 900px) {
-  .experience .position .left {
-    width: 200px;
-    text-align: right;
-  }
 }
 
 .experience .dates {
@@ -287,23 +290,10 @@ header .image img {
   text-transform: uppercase;
 }
 
-@media (min-width: 900px) {
-  .experience h4 {
-    margin-right: 0;
-  }
-}
-
 .experience .company {
   display: inline-block;
   font-weight: bold;
   font-size: 14px;
-}
-
-@media (min-width: 900px) {
-  .experience .company {
-    display: block;
-    font-size: 12px;
-  }
 }
 
 .experience p {
@@ -311,10 +301,29 @@ header .image img {
   margin-top: 10px;
 }
 
-@media (min-width: 900px) {
-  .experience p {
-    width: 80%;
-  }
+.experience p span {
+  color: #696969;
+  text-transform: uppercase;
+  font-weight: 600;
+}
+
+.general-skills {
+  border-bottom: 1px solid;
+  border-image-slice: 1;
+  border-image-source: linear-gradient(to left, teal, goldenrod);
+  padding-bottom: 20px;
+}
+
+.general-skills span {
+  display: inline-block;
+  background: teal;
+  color: white;
+  margin-right: 5px;
+  margin-top: 5px;
+  padding: 10px 10px;
+  border-radius: 5px;
+  font-weight: 600;
+  font-size: 14px;
 }
 
 * {
@@ -328,9 +337,9 @@ header .image img {
 
 body {
   background-color: teal;
-  min-height: 100vh;
   font-family: Helvetica, sans-serif;
   color: #696969;
+  position: relative;
 }
 
 .paper {
@@ -349,11 +358,12 @@ body {
   }
 }
 
+section {
+  margin-top: 20px;
+}
+
 .container {
   padding: 10px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
@@ -362,6 +372,14 @@ body {
 @media (min-width: 550px) {
   .container {
     padding: 20px;
+  }
+}
+
+@media (min-width: 900px) {
+  .container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
   }
 }
 
@@ -389,5 +407,15 @@ button {
   font-size: 12px;
   line-height: 14px;
   color: #acacac;
+}
+
+.left {
+  width: 100%;
+}
+
+@media (min-width: 900px) {
+  .left {
+    width: 35%;
+  }
 }
 /*# sourceMappingURL=style.css.map */

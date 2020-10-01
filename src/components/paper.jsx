@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import { Header } from './header';
-import { Skills } from './skills';
+import { TechnicalSkills } from './technical_skills';
+import { GeneralSkills } from './general_skills';
 import { Experience } from './experience';
 import { Consent } from './consent';
 
@@ -10,8 +11,14 @@ export class Paper extends Component {
     return (
       <div className="paper">
         <Header />
-        <Skills />
-        <Experience />
+        <div className="container">
+
+          <Experience />
+          <div className="left">
+            <TechnicalSkills />
+            <GeneralSkills />
+          </div>
+        </div>
         <Consent />
       </div>
     )

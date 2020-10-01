@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 
-const skills = [
+const technicalSkills = [
   {
     id: 1,
     skill: 'HTML',
@@ -28,13 +28,13 @@ const skills = [
   }
 ]
 
-export class Skills extends Component {
+export class TechnicalSkills extends Component {
 
   render() {
 
     const SkillSet = ({ skills }) => (
       <div className='skill-list'>
-        {skills.map(element => (
+        {technicalSkills.map(element => (
           <Skill key={element.id} skill={element.skill} level={element.level} />
         ))}
       </div>
@@ -42,10 +42,8 @@ export class Skills extends Component {
 
     return (
       <section className="skills">
-        <div className="container">
-          <h3>My Skills</h3>
-          <SkillSet skills={skills} />
-        </div>
+        <h3>Technical Skills</h3>
+        <SkillSet technicalSkills={technicalSkills} />
       </section>
     )
   }

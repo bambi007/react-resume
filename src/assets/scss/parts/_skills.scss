@@ -2,70 +2,71 @@
   border-bottom: 1px solid;
   border-image-slice: 1;
   border-image-source: linear-gradient(to left, $primary-accent, $secondary-accent);
+  padding-bottom: 30px;
+  justify-content: flex-end;
 
-  .container {
-    display: block;
+  .skill-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
 
-    .skill-list {
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: space-between;
-
-      .skill {
-        width: 100%;
-        margin-top: 10px;
-
-        @media (min-width: 550px) {
-          width: 45%;
-        }
-      }
-    }
-
-    .data {
-      display: flex;
-      justify-content: space-between;
-
-      span {
-        text-transform: uppercase;
-        font-weight: 600;
-        font-size: 14px;
-
-        &.percent {
-          color: $secondary-accent;
-        }
-      }
-    }
-
-
-    .progress-bar {
-      // margin-top: 10px;
-      background: $secondary-accent;
-      justify-content: flex-start;
-      border-radius: 20px;
-      align-items: center;
-      position: relative;
-      padding: 0 2px;
-      display: flex;
-      height: 16px;
+    .skill {
       width: 100%;
-    }
+      margin-top: 10px;
 
-    .progress-value {
-      animation: load 2s normal forwards;
-      border-radius: 20px;
-      background: $brightest-color;
-      height: 12px;
-      width: 12px;
-    }
-
-    @keyframes load {
-      0% {
-        width: 15px;
+      @media (min-width: 550px) {
+        width: 45%;
       }
 
-      100% {
-        // width: 78%;
+      @media (min-width: 900px) {
+        width: 100%;
       }
+    }
+  }
+
+  .data {
+    display: flex;
+    justify-content: space-between;
+
+    span {
+      text-transform: uppercase;
+      font-weight: 600;
+      font-size: 14px;
+
+      &.percent {
+        color: $secondary-accent;
+      }
+    }
+  }
+
+
+  .progress-bar {
+    background: $secondary-accent;
+    justify-content: flex-start;
+    border-radius: 20px;
+    align-items: center;
+    position: relative;
+    padding: 0 2px;
+    display: flex;
+    height: 16px;
+    width: 100%;
+  }
+
+  .progress-value {
+    animation: load 2s normal forwards;
+    border-radius: 20px;
+    background: $brightest-color;
+    height: 12px;
+    width: 12px;
+  }
+
+  @keyframes load {
+    0% {
+      width: 15px;
+    }
+
+    100% {
+      // width: 78%;
     }
   }
 }

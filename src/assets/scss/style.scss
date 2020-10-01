@@ -4,6 +4,7 @@
 @import './parts/header';
 @import './parts/skills';
 @import './parts/experience';
+@import './parts/general_skills';
 
 * {
   box-sizing: border-box;
@@ -15,35 +16,38 @@
 
 body {
   background-color: $primary-accent;
-  min-height: 100vh;
-  // font-size: calc(10px + 2vmin);
   font-family: Helvetica, sans-serif;
-  // font-size: calc(14px + (26 - 14) * ((100vw - 300px) / (1600 - 300)));
   color: $primary-color;
+  position: relative;
 }
 
 .paper {
   background: $brightest-color;
   width: 100vw;
-  // height: 100vh;
   margin: 0 auto;
 
   @media (min-width: 900px) {
     width: 900px;
-    // height: 1272px;
     box-shadow: $big-shadow;
     margin-top: 50px;
     margin-bottom: 80px;
   }
 }
 
+section {
+  margin-top: 20px;
+}
+
 .container {
   padding: 10px;
-  display: flex;
   justify-content: space-between;
 
   @media (min-width: 550px) {
     padding: 20px;
+  }
+
+  @media (min-width: 900px) {
+    display: flex;
   }
 }
 
@@ -70,4 +74,12 @@ button {
   font-size: 12px;
   line-height: 14px;
   color: $secondary-color;
+}
+
+.left {
+  width: 100%;
+
+  @media (min-width: 900px) {
+    width: 35%;
+  }
 }

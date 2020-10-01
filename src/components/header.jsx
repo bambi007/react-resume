@@ -1,5 +1,25 @@
 import React, { Component } from 'react';
-import Photo from '../assets/images/ice.jpg'
+import Photo from '../assets/images/profile_picture.png'
+
+const socialMedia = [
+  {
+    id: 1,
+    platform: 'github',
+    link: 'https://github.com/bambi007'
+  },
+  {
+    id: 2,
+    platform: 'linkedin',
+    link: 'https://www.linkedin.com/in/sabina-dziedzioch/'
+  },
+  {
+    id: 3,
+    platform: 'behance',
+    link: 'https://www.behance.net/szaraq'
+  }
+]
+
+
 
 export class ContactInfo extends Component {
   render() {
@@ -12,17 +32,30 @@ export class ContactInfo extends Component {
   }
 }
 
-export class SocialMedia extends Component {
+export class Contact extends Component {
   render() {
+
+    const SocialMedia = ({ socialMedia }) => (
+      <div className='social-media'>
+        {socialMedia.map(element => (
+          <SocialButton key={element.id} platform={element.platform} link={element.link} />
+        ))}
+      </div>
+    );
+
     return (
       <div className='contact-links'>
-        <div className="social-media">
-          <button href="https://github.com" className="social github"></button>
-          <button href="https://github.com" className="social linkedin"></button>
-          <button href="https://github.com" className="social behance"></button>
-        </div>
+        <SocialMedia socialMedia={socialMedia} />
         <ContactInfo phone='881688818' email='dziedziochs@gmail.com' />
       </div>
+    )
+  }
+}
+
+export class SocialButton extends Component {
+  render() {
+    return (
+      <button href={this.props.link} className={'social ' + this.props.platform} ></button>
     )
   }
 }
@@ -34,7 +67,7 @@ export class Profile extends Component {
       <div className="profile">
         <h1>{this.props.name}</h1>
         <span>{this.props.title}</span>
-        <SocialMedia />
+        <Contact />
       </div>
     )
   }
