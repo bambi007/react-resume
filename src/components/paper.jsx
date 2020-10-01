@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import { Header } from './header';
 import { Skills } from './skills';
 import { Experience } from './experience';
+import { Consent } from './consent';
 
 
 export class Paper extends Component {
@@ -11,6 +12,7 @@ export class Paper extends Component {
         <Header />
         <Skills />
         <Experience />
+        <Consent />
       </div>
     )
   }

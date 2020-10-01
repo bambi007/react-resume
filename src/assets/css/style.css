@@ -302,6 +302,7 @@ header .image img {
 @media (min-width: 900px) {
   .experience .company {
     display: block;
+    font-size: 12px;
   }
 }
 
@@ -335,14 +336,12 @@ body {
 .paper {
   background: white;
   width: 100vw;
-  height: 100vh;
   margin: 0 auto;
 }
 
 @media (min-width: 900px) {
   .paper {
     width: 900px;
-    height: 1272px;
     -webkit-box-shadow: 0 20px 40px #00000080;
             box-shadow: 0 20px 40px #00000080;
     margin-top: 50px;
@@ -373,5 +372,22 @@ body {
   color: teal;
   padding: 10px 0;
   font-size: 14px;
+}
+
+button {
+  background: none;
+  border: none;
+  outline: none;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+  cursor: pointer;
+}
+
+.consent {
+  text-align: center;
+  font-style: oblique;
+  font-size: 12px;
+  line-height: 14px;
+  color: #acacac;
 }
 /*# sourceMappingURL=style.css.map */

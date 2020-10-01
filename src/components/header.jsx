@@ -5,8 +5,8 @@ export class ContactInfo extends Component {
   render() {
     return (
       <div className="contact">
-        <a href={'tel:' + this.props.phone}><span>phone</span>{this.props.phone}</a>
-        <a href={'mailto:+48' + this.props.email}><span>e-mail</span>{this.props.email}</a>
+        <a href={'tel:+48' + this.props.phone}><span>phone</span>{this.props.phone}</a>
+        <a href={'mailto:' + this.props.email}><span>e-mail</span>{this.props.email}</a>
       </div>
     )
   }
@@ -17,9 +17,9 @@ export class SocialMedia extends Component {
     return (
       <div className='contact-links'>
         <div className="social-media">
-          <a className="social github"></a>
-          <a className="social linkedin"></a>
-          <a className="social behance"></a>
+          <button href="https://github.com" className="social github"></button>
+          <button href="https://github.com" className="social linkedin"></button>
+          <button href="https://github.com" className="social behance"></button>
         </div>
         <ContactInfo phone='881688818' email='dziedziochs@gmail.com' />
       </div>
@@ -42,7 +42,6 @@ export class Profile extends Component {
 
 export class ProfilePicture extends Component {
   render() {
-    const image = ['profile picture'];
     return (
       <div className="image"><img src={this.props.source} alt={this.props.alt} /></div>
     )
