@@ -1,16 +1,13 @@
 .experience {
-  border-bottom: 1px solid;
-  border-image-slice: 1;
-  border-image-source: linear-gradient(to left, $primary-accent, $secondary-accent);
-  padding-bottom: 20px;
-  height: 100%;
 
-  // border-bottom: 1px solid;
-  // border-image-slice: 1;
-  // border-image-source: linear-gradient(to left, $primary-accent, $secondary-accent);
   @media (min-width: 900px) {
     width: 70%;
     padding-right: 30px;
+  }
+
+  .position-list {
+    display: flex;
+    flex-direction: column-reverse;
   }
 
   .position {
@@ -18,7 +15,7 @@
     padding-bottom: 10px;
     border-bottom: 1px solid $border-color;
 
-    &:last-child {
+    &:first-child {
       border: none;
     }
 

@@ -25,8 +25,8 @@ export class ContactInfo extends Component {
   render() {
     return (
       <div className="contact">
-        <a href={'tel:+48' + this.props.phone}><span>phone</span>{this.props.phone}</a>
-        <a href={'mailto:' + this.props.email}><span>e-mail</span>{this.props.email}</a>
+        <a href={'tel:+48' + this.props.phone} alt={this.props.phone}><span>phone</span>{this.props.phone}</a>
+        <a href={'mailto:' + this.props.email} alt={this.props.email}><span>e-mail</span>{this.props.email}</a>
       </div>
     )
   }
@@ -55,7 +55,9 @@ export class Contact extends Component {
 export class SocialButton extends Component {
   render() {
     return (
-      <button href={this.props.link} className={'social ' + this.props.platform} ></button>
+      <a href={this.props.link} target="blank" alt={this.props.platform}>
+        <button href={this.props.link} className={'social ' + this.props.platform} ></button>
+      </a>
     )
   }
 }

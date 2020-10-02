@@ -64,7 +64,7 @@ export class Experience extends Component {
   render() {
 
     const PositionsList = ({ experience }) => (
-      <div>
+      <div className="position-list">
         {experience.map(element => (
           <Position key={element.id} position={element.position} dates={element.dates} company={element.company} description={element.description} />
         ))}
