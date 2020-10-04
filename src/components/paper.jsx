@@ -4,6 +4,7 @@ import { TechnicalSkills } from './technical_skills';
 import { GeneralSkills } from './general_skills';
 import { Experience } from './experience';
 import { Consent } from './consent';
+import { DownloadButton } from './download';
 
 
 export class Paper extends Component {
@@ -17,6 +18,7 @@ export class Paper extends Component {
           <div className="left">
             <TechnicalSkills />
             <GeneralSkills />
+            <DownloadButton />
           </div>
         </div>
         <Consent />

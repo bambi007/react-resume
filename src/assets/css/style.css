@@ -149,6 +149,12 @@ header .image img {
   opacity: 0.8;
 }
 
+@media print {
+  .contact-links .social-media .social {
+    display: none;
+  }
+}
+
 .skills {
   border-bottom: 1px solid;
   border-image-slice: 1;
@@ -206,6 +212,12 @@ header .image img {
   color: goldenrod;
 }
 
+@media print {
+  .skills .data span.percent {
+    display: block;
+  }
+}
+
 .skills .progress-bar {
   background: goldenrod;
   -webkit-box-pack: start;
@@ -222,6 +234,12 @@ header .image img {
   display: flex;
   height: 16px;
   width: 100%;
+}
+
+@media print {
+  .skills .progress-bar {
+    display: none;
+  }
 }
 
 .skills .progress-value {
@@ -309,11 +327,23 @@ header .image img {
   font-weight: 600;
 }
 
+@media print {
+  .experience {
+    page-break-after: always;
+  }
+}
+
 .general-skills {
   border-bottom: 1px solid;
   border-image-slice: 1;
   border-image-source: linear-gradient(to left, teal, goldenrod);
   padding-bottom: 20px;
+}
+
+@media print {
+  .general-skills {
+    border: none;
+  }
 }
 
 .general-skills span {
@@ -326,6 +356,28 @@ header .image img {
   border-radius: 5px;
   font-weight: 600;
   font-size: 14px;
+}
+
+.download {
+  text-align: center;
+  margin-top: 40px;
+}
+
+.download a {
+  background: goldenrod;
+  text-transform: uppercase;
+  color: white;
+  font-weight: 600;
+  padding: 20px 50px;
+  border-radius: 5px;
+  font-size: 20px;
+  border: 2px solid goldenrod;
+}
+
+.download a:hover {
+  background: none;
+  color: goldenrod;
+  border: 2px solid goldenrod;
 }
 
 * {

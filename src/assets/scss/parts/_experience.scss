@@ -54,4 +54,8 @@
       font-weight: 600;
     }
   }
+
+  @media print {
+    page-break-after: always;
+  }
 }
