@@ -1,6 +1,6 @@
 .download {
   text-align: center;
-  margin-top: 40px;
+  margin: 40px 0;
 
   a {
     background: $secondary-accent;
@@ -18,5 +18,9 @@
       border: 2px solid $secondary-accent;
     }
 
+  }
+
+  @media print {
+    display: none;
   }
 }

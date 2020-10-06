@@ -360,7 +360,7 @@ header .image img {
 
 .download {
   text-align: center;
-  margin-top: 40px;
+  margin: 40px 0;
 }
 
 .download a {
@@ -378,6 +378,12 @@ header .image img {
   background: none;
   color: goldenrod;
   border: 2px solid goldenrod;
+}
+
+@media print {
+  .download {
+    display: none;
+  }
 }
 
 * {
