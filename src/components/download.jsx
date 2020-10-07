@@ -4,7 +4,7 @@ export class DownloadButton extends Component {
   render() {
     return (
       <div className="download">
-        <a href="javascript:window.print()" alt='download PDF'>Download PDF</a>
+        <button onClick={() => window.print()}>Download PDF</button>
       </div>
     )
   }

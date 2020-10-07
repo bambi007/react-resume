@@ -1,13 +1,7 @@
 import React, { Component } from 'react';
 
 export class Consent extends Component {
-  constructor(props) {
-    super(props);
-    this.state = {
-      ten: "10%",
-      twenty: "20%",
-    };
-  }
+
   render() {
     return (
       <div className="container">
@@ -16,6 +10,3 @@ export class Consent extends Component {
     )
   }
 }
-
-
-

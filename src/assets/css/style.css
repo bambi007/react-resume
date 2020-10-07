@@ -363,7 +363,7 @@ header .image img {
   margin: 40px 0;
 }
 
-.download a {
+.download button {
   background: goldenrod;
   text-transform: uppercase;
   color: white;
@@ -374,7 +374,7 @@ header .image img {
   border: 2px solid goldenrod;
 }
 
-.download a:hover {
+.download button:hover {
   background: none;
   color: goldenrod;
   border: 2px solid goldenrod;

@@ -25,8 +25,8 @@ export class ContactInfo extends Component {
   render() {
     return (
       <div className="contact">
-        <a href={'tel:+48' + this.props.phone} alt={this.props.phone}><span>phone</span>{this.props.phone}</a>
-        <a href={'mailto:' + this.props.email} alt={this.props.email}><span>e-mail</span>{this.props.email}</a>
+        <a href={'tel:+48' + this.props.phone}><span>phone</span>{this.props.phone}</a>
+        <a href={'mailto:' + this.props.email}><span>e-mail</span>{this.props.email}</a>
       </div>
     )
   }
